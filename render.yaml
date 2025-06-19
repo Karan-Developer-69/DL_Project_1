@@ -4,4 +4,4 @@ services:
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
-    pythonVersion: 3.12.6
+    plan: free
