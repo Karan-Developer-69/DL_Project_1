@@ -2,7 +2,10 @@ import numpy as np
 from flask import Flask, request, render_template
 from keras.preprocessing import image
 import tensorflow as tf
+# Add this at the top of your file (below the imports)
 import os
+os.makedirs('static', exist_ok=True)
+
 
 app = Flask(__name__)
 model = tf.keras.models.load_model('model.h5')
